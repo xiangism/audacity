@@ -55,7 +55,6 @@ class TimeTrack;
 class AudioThread;
 class Meter;
 class SelectedRegion;
-class TimeTrack;
 
 class AudacityProject;
 
@@ -226,7 +225,6 @@ class AUDACITY_DLL_API AudioIO final {
  public:
    bool SetHasSolo(bool hasSolo);
    bool GetHasSolo() { return mHasSolo; }
-   void SetMidiPlaySpeed(double s) { mMidiPlaySpeed = s * 0.01; }
 #endif
 
    /** \brief Returns true if the stream is active, or even if audio I/O is
@@ -507,7 +505,6 @@ private:
    PmError          mLastPmError;
    long             mMidiLatency; // latency value for PortMidi
    long             mSynthLatency; // latency of MIDI synthesizer
-   double           mMidiPlaySpeed; // a copy of TranscriptionToolBar::mPlaySpeed
 
    // These fields are used to synchronize MIDI with audio
    volatile double  mAudioCallbackOutputTime; // PortAudio's outTime
