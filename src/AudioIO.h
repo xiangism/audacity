@@ -522,7 +522,7 @@ private:
    void OutputEvent();
    void FillMidiBuffers();
    void GetNextEvent();
-   double AudioTime() { return mPlaybackSchedule.mT0 + mNumFrames / mRate; }
+   double AudioTime();
    double PauseTime();
    void AllNotesOff(bool looping = false);
 #endif
