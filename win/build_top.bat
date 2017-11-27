@@ -49,7 +49,7 @@ call :dobuild x64
 @endlocal
 @setlocal
 
-call "%VS150COMNTOOLS%VsDevCmd.bat" -arch=amd64 -host_arch=x64
+call "%VS150COMNTOOLS%VsDevCmd.bat" -arch=arm64 -host_arch=x64
 @if %errorlevel% neq 0 goto weberrorexit
 
 call :dobuild ARM64
