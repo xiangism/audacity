@@ -1,37 +1,15 @@
 version: 1.0.{build}
 branches:
   only:
-  - x64
+  - arm64
 image:
-- Visual Studio 2013
-#- Visual Studio 2015
 - Visual Studio 2017
 configuration: Release
 platform:
+- ARM64
 - x64
-- Win32
-environment:
- matrix:
-   - Architecture: none
-   - Architecture: avx
-   - Architecture: avx2
-   - Architecture: sse2
 matrix:
   fast_finish: true
-  exclude:
-    - image: Visual Studio 2013
-      platform: x64
-    - image: Visual Studio 2013
-      Architecture: avx
-    - image: Visual Studio 2013
-      Architecture: avx2
-    - image: Visual Studio 2013
-      Architecture: sse2
-    - image: Visual Studio 2017
-      Architecture: avx2
-      platform: Win32
-    - platform: x64
-      Architecture: sse2
 install:
 - git submodule update --init wxWidgets
 before_build:
