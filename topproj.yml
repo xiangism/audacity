@@ -19,7 +19,7 @@ before_build:
 build:
   project: win\top.proj
   parallel: true
-  verbosity: minimal
+  verbosity: normal
 before_package:
 - cmd: >-
     del /S win\build\*.ipdb &
