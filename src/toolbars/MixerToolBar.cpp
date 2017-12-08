@@ -287,7 +287,7 @@ void MixerToolBar::SetToolTips()
 
    if (mOutputSlider->IsEnabled()) {
       mOutputSlider->SetToolTipTemplate(wxString::Format(
-            _("Playback Volume: %%.2f%s"), gAudioIO->OutputMixerEmulated() ? _(" (emulated)") : wxT("")));
+           _("Playback Volume: %%.2f%s"), gAudioIO->OutputMixerEmulated() ? _(" (emulated)") : wxString{ wxT("") }));
    }
    else {
       mOutputSlider->SetToolTipTemplate(_("Playback Volume (Unavailable; use system mixer.)"));

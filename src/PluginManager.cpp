@@ -2769,7 +2769,7 @@ wxString PluginManager::SettingsPath(const PluginID & ID, bool shared)
                  wxT("_") +
                  plug.GetVendor(false) +
                  wxT("_") +
-                 (shared ? wxT("") : plug.GetSymbol());
+                 (shared ? wxString{ wxT("") } : plug.GetSymbol());
 
    return SETROOT +
           ConvertID(id) +

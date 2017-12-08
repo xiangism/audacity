@@ -102,7 +102,7 @@ void MessageBoxException::DelayedHandlerAction()
       if ( wxAtomicDec( sOutstandingMessages ) == 0 )
          ::wxMessageBox(
             ErrorMessage(),
-            caption.IsEmpty() ? wxMessageBoxCaptionStr : caption,
+             caption.IsEmpty() ? wxString{ wxMessageBoxCaptionStr } : caption,
             wxICON_ERROR
          );
       moved = true;

@@ -994,7 +994,7 @@ wxString LWSlider::GetTip(float value) const
 #ifdef EXPERIMENTAL_MIDI_OUT
       case VEL_SLIDER:
           val.Printf(wxT("%s%d"),
-                     (value > 0.0f ? _("+") : wxT("")),
+                     (value > 0.0f ? _("+") : wxString{ wxT("") }),
                      (int) value);
           break;
 #endif
