@@ -49,7 +49,7 @@ LyricsWindow::LyricsWindow(AudacityProject *parent)
    : wxFrame( &GetProjectFrame( *parent ), -1,
             wxString::Format(_("Audacity Karaoke%s"),
                               ((parent->GetProjectName().empty()) ?
-                                 wxT("") :
+                                 wxString{ wxT("") } :
                                  wxString::Format(
                                    wxT(" - %s"),
                                    parent->GetProjectName()))),
