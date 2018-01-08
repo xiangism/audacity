@@ -12,6 +12,7 @@
 #include "../MemoryX.h"
 #include <wx/panel.h>
 #include <wx/dialog.h>
+#include <wx/windowid.h>
 
 #include "../Internat.h"
 
@@ -38,7 +39,12 @@ class AUDACITY_DLL_API wxPanelWrapper : public wxTabTraversalWrapper<wxPanel>
 {
 public:
    // Constructors
-   wxPanelWrapper() {}
+   wxPanelWrapper() = default;
+
+   wxPanelWrapper(const wxPanelWrapper&) = delete;
+   wxPanelWrapper& operator=(const wxPanelWrapper&) = delete;
+   wxPanelWrapper(wxPanelWrapper&&) = delete;
+   wxPanelWrapper& operator=(wxPanelWrapper&&) = delete;
 
    wxPanelWrapper(
          wxWindow *parent,
@@ -71,7 +77,7 @@ class wxDialogWrapper : public wxTabTraversalWrapper<wxDialog>
 {
 public:
    // Constructors
-   wxDialogWrapper() {}
+   wxDialogWrapper() = default;
 
    // Constructor with no modal flag - the new convention.
    wxDialogWrapper(
@@ -143,7 +149,7 @@ public:
 class FileDialogWrapper : public wxTabTraversalWrapper<FileDialog>
 {
 public:
-   FileDialogWrapper() {}
+   FileDialogWrapper() = default;
 
    // Constructor with no modal flag - the new convention.
    FileDialogWrapper(
