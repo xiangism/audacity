@@ -126,9 +126,7 @@ SelectionBar::SelectionBar()
    mSelectionMode = gPrefs->ReadLong(wxT("/SelectionToolbarMode"),  0);
 }
 
-SelectionBar::~SelectionBar()
-{
-}
+SelectionBar::~SelectionBar() = default;
 
 SelectionBar &SelectionBar::Get( AudacityProject &project )
 {
