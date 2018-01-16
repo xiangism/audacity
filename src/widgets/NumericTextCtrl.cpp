@@ -1376,6 +1376,8 @@ bool NumericTextCtrl::Layout()
 
    wxMemoryDC memDC;
 
+   memDC.SetLayoutDirection(wxLayout_LeftToRight);
+
    // Placeholder bitmap so the memDC has something to reference
    mBackgroundBitmap = std::make_unique<wxBitmap>(1, 1);
    memDC.SelectObject(*mBackgroundBitmap);
@@ -1504,6 +1506,9 @@ void NumericTextCtrl::OnErase(wxEraseEvent & WXUNUSED(event))
 void NumericTextCtrl::OnPaint(wxPaintEvent & WXUNUSED(event))
 {
    wxPaintDC dc(this);
+
+   dc.SetLayoutDirection(wxLayout_LeftToRight);
+
    bool focused = (FindFocus() == this);
 
    dc.DrawBitmap(*mBackgroundBitmap, 0, 0);
