@@ -150,9 +150,7 @@ TrackArtist::TrackArtist( TrackPanel *parent_ )
    UpdatePrefs();
 }
 
-TrackArtist::~TrackArtist()
-{
-}
+TrackArtist::~TrackArtist() = default;
 
 TrackArtist * TrackArtist::Get( TrackPanelDrawingContext &context )
 {
