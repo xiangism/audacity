@@ -60,7 +60,7 @@ class WaveformPrefsFactory final : public PrefsPanelFactory
 {
 public:
    explicit WaveformPrefsFactory(WaveTrack *wt = 0);
-   PrefsPanel *Create(wxWindow *parent) override;
+   PrefsPanel *Create(wxWindow *parent) const override;
 
 private:
    WaveTrack *const mWt;

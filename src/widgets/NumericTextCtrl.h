@@ -93,13 +93,13 @@ public:
 
    wxString GetString();
 
-   wxString GetFormatString();
+   wxString GetFormatString() const;
    int GetFormatIndex();
 
-   int GetNumBuiltins();
-   wxString GetBuiltinName(const int index);
-   wxString GetBuiltinFormat(const int index);
-   wxString GetBuiltinFormat(const wxString & name);
+   int GetNumBuiltins() const;
+   wxString GetBuiltinName(const int index) const;
+   wxString GetBuiltinFormat(const int index) const;
+   wxString GetBuiltinFormat(const wxString & name) const;
 
    // Adjust the value by the number "steps" in the active format.
    // Increment if "dir" is 1, decrement if "dir" is -1.
@@ -149,7 +149,7 @@ class NumericTextCtrl final : public wxControl, public NumericConverter
                    wxWindow *parent,
                    wxWindowID id,
                    const wxString &formatName = wxEmptyString,
-                   double value = 0.0,
+                   double timeValue = 0.0,
                    double sampleRate = 44100,
                    const wxPoint &pos = wxDefaultPosition,
                    const wxSize &size = wxDefaultSize,

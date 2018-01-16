@@ -37,6 +37,6 @@ class WarningsPrefs final : public PrefsPanel
 class WarningsPrefsFactory final : public PrefsPanelFactory
 {
 public:
-   PrefsPanel *Create(wxWindow *parent) override;
+   PrefsPanel *Create(wxWindow *parent) const override;
 };
 #endif

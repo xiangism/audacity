@@ -296,7 +296,7 @@ wxString MidiIOPrefs::HelpPageName()
    return "MIDI_Devices_Preferences";
 }
 
-PrefsPanel *MidiIOPrefsFactory::Create(wxWindow *parent)
+PrefsPanel *MidiIOPrefsFactory::Create(wxWindow *parent) const
 {
    wxASSERT(parent); // to justify safenew
    return safenew MidiIOPrefs(parent);

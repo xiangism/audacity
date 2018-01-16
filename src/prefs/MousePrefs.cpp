@@ -203,7 +203,7 @@ wxString MousePrefs::HelpPageName()
    return "Mouse_Preferences";
 }
 
-PrefsPanel *MousePrefsFactory::Create(wxWindow *parent)
+PrefsPanel *MousePrefsFactory::Create(wxWindow *parent) const
 {
    wxASSERT(parent); // to justify safenew
    return safenew MousePrefs(parent);

@@ -268,7 +268,7 @@ wxString RecordingPrefs::HelpPageName()
    return "Recording_Preferences";
 }
 
-PrefsPanel *RecordingPrefsFactory::Create(wxWindow *parent)
+PrefsPanel *RecordingPrefsFactory::Create(wxWindow *parent) const
 {
    wxASSERT(parent); // to justify safenew
    return safenew RecordingPrefs(parent);

@@ -240,7 +240,7 @@ wxString QualityPrefs::HelpPageName()
    return "Quality_Preferences";
 }
 
-PrefsPanel *QualityPrefsFactory::Create(wxWindow *parent)
+PrefsPanel *QualityPrefsFactory::Create(wxWindow *parent) const
 {
    wxASSERT(parent); // to justify safenew
    return safenew QualityPrefs(parent);

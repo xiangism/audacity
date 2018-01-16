@@ -66,7 +66,7 @@ class MidiIOPrefs final : public PrefsPanel
 class MidiIOPrefsFactory final : public PrefsPanelFactory
 {
 public:
-   PrefsPanel *Create(wxWindow *parent) override;
+   PrefsPanel *Create(wxWindow *parent) const override;
 };
 #endif
 

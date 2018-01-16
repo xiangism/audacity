@@ -54,6 +54,6 @@ class ModulePrefs final : public PrefsPanel
 class ModulePrefsFactory final : public PrefsPanelFactory
 {
 public:
-   PrefsPanel *Create(wxWindow *parent) override;
+   PrefsPanel *Create(wxWindow *parent) const override;
 };
 #endif

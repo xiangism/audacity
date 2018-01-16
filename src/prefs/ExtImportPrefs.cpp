@@ -811,7 +811,7 @@ void ExtImportPrefsDropTarget::OnLeave()
 {
 }
 
-PrefsPanel *ExtImportPrefsFactory::Create(wxWindow *parent)
+PrefsPanel *ExtImportPrefsFactory::Create(wxWindow *parent) const
 {
    wxASSERT(parent); // to justify safenew
    return safenew ExtImportPrefs(parent);

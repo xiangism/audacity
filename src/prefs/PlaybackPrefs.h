@@ -36,7 +36,7 @@ class PlaybackPrefs final : public PrefsPanel
 class PlaybackPrefsFactory final : public PrefsPanelFactory
 {
 public:
-   PrefsPanel *Create(wxWindow *parent) override;
+   PrefsPanel *Create(wxWindow *parent) const override;
 };
 
 #endif

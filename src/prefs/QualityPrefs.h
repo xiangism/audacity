@@ -57,6 +57,6 @@ class QualityPrefs final : public PrefsPanel
 class QualityPrefsFactory final : public PrefsPanelFactory
 {
 public:
-   PrefsPanel *Create(wxWindow *parent) override;
+   PrefsPanel *Create(wxWindow *parent) const override;
 };
 #endif

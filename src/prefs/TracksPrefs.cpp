@@ -239,7 +239,7 @@ wxString TracksPrefs::HelpPageName()
    return "Tracks_Preferences";
 }
 
-PrefsPanel *TracksPrefsFactory::Create(wxWindow *parent)
+PrefsPanel *TracksPrefsFactory::Create(wxWindow *parent) const
 {
    wxASSERT(parent); // to justify safenew
    return safenew TracksPrefs(parent);

@@ -201,7 +201,7 @@ bool ThemePrefs::Commit()
    return true;
 }
 
-PrefsPanel *ThemePrefsFactory::Create(wxWindow *parent)
+PrefsPanel *ThemePrefsFactory::Create(wxWindow *parent) const
 {
    wxASSERT(parent); // to justify safenew
    return safenew ThemePrefs(parent);

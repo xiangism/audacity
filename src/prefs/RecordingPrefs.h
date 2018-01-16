@@ -44,6 +44,6 @@ class RecordingPrefs final : public PrefsPanel
 class RecordingPrefsFactory final : public PrefsPanelFactory
 {
 public:
-   PrefsPanel *Create(wxWindow *parent) override;
+   PrefsPanel *Create(wxWindow *parent) const override;
 };
 #endif

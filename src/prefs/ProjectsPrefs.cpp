@@ -89,7 +89,7 @@ wxString ProjectsPrefs::HelpPageName()
    return "Projects_Preferences";
 }
 
-PrefsPanel *ProjectsPrefsFactory::Create(wxWindow *parent)
+PrefsPanel *ProjectsPrefsFactory::Create(wxWindow *parent) const
 {
    wxASSERT(parent); // to justify safenew
    return safenew ProjectsPrefs(parent);

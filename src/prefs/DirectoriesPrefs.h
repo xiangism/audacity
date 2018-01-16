@@ -42,6 +42,6 @@ class DirectoriesPrefs final : public PrefsPanel
 class DirectoriesPrefsFactory final : public PrefsPanelFactory
 {
 public:
-   PrefsPanel *Create(wxWindow *parent) override;
+   PrefsPanel *Create(wxWindow *parent) const override;
 };
 #endif

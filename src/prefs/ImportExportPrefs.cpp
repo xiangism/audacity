@@ -118,7 +118,7 @@ wxString ImportExportPrefs::HelpPageName()
    return "Import_-_Export_Preferences";
 }
 
-PrefsPanel *ImportExportPrefsFactory::Create(wxWindow *parent)
+PrefsPanel *ImportExportPrefsFactory::Create(wxWindow *parent) const
 {
    wxASSERT(parent); // to justify safenew
    return safenew ImportExportPrefs(parent);

@@ -125,7 +125,7 @@ TracksBehaviorsPrefsFactory::TracksBehaviorsPrefsFactory()
 {
 }
 
-PrefsPanel *TracksBehaviorsPrefsFactory::Create(wxWindow *parent)
+PrefsPanel *TracksBehaviorsPrefsFactory::Create(wxWindow *parent) const
 {
    wxASSERT(parent); // to justify safenew
    return safenew TracksBehaviorsPrefs(parent);
