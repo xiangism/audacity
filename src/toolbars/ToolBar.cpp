@@ -343,9 +343,7 @@ ToolBar::ToolBar( int type,
 //
 // Destructor
 //
-ToolBar::~ToolBar()
-{
-}
+ToolBar::~ToolBar() = default;
 
 //
 // Returns the toolbar title
