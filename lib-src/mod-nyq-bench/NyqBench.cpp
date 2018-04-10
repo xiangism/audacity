@@ -87,7 +87,7 @@
 #include "images/media-playback-start-large.xpm"
 #include "images/media-playback-stop-large.xpm"
 
-#if defined(__WXMSW__)
+#if AUDACITY_NEED_WX_LIBS
 #include <wx/init.h>
 #  if defined(__WXDEBUG__)
 #     define D "d"
@@ -115,7 +115,7 @@
 #  undef V
 #  undef D
 
-#endif //(__WXMSW__)
+#endif // AUDACITY_NEED_WX_LIBS
 /*
 There are several functions that can be used in a GUI module.
 
