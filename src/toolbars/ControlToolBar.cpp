@@ -556,7 +556,7 @@ int ControlToolBar::PlayPlayRegion(const SelectedRegion &selectedRegion,
    bool useMidi = true;
 
    // Remove these lines to experiment with scrubbing/seeking of note tracks
-   if (options.pScrubbingOptions)
+   if (options.pScrubbingOptions && !options.pScrubbingOptions->isPlayingAtSpeed)
       useMidi = false;
 
    // Uncomment this for laughs!
