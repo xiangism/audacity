@@ -9079,6 +9079,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				PRODUCT_NAME = portmidi;
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/lib-src/portmidi/pm_common $(TOPLEVEL)/lib-src/portmidi/pm_mac $(TOPLEVEL)/lib-src/portmidi/porttime";
 			};
 			name = Debug;
 		};
@@ -9088,6 +9089,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				PRODUCT_NAME = portmidi;
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/lib-src/portmidi/pm_common $(TOPLEVEL)/lib-src/portmidi/pm_mac $(TOPLEVEL)/lib-src/portmidi/porttime";
 			};
 			name = Release;
 		};
@@ -9248,7 +9250,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.audacityteam.audacity;
 				PRODUCT_NAME = Audacity;
 				STRIP_INSTALLED_PRODUCT = NO;
-				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/include $(TOPLEVEL)/mac/config/$(arch)/src/** $(TOPLEVEL)/mac $(TOPLEVEL)/src/** $(TOPLEVEL)/lib-src/FileDialog $(TOPLEVEL)/lib-src/libflac/include $(TOPLEVEL)/lib-src/libid3tag $(TOPLEVEL)/lib-src/lame $(TOPLEVEL)/mac/config/$(arch)/lib-src/libmad $(TOPLEVEL)/lib-src/libmad $(TOPLEVEL)/lib-src/libogg/include $(TOPLEVEL)/lib-src/libnyquist/nyq $(TOPLEVEL)/mac/config/$(arch)/lib-src/libsndfile/** $(TOPLEVEL)/lib-src/libsndfile/src $(TOPLEVEL)/lib-src/libsoxr/src $(TOPLEVEL)/lib-src/libvamp $(TOPLEVEL)/lib-src/libvorbis/include $(TOPLEVEL)/lib-src/portaudio-v19/include $(TOPLEVEL)/lib-src/portmixer/px_common $(TOPLEVEL)/lib-src/portsmf $(TOPLEVEL)/mac/config/$(arch)/lib-src/soundtouch/** $(TOPLEVEL)/lib-src/soundtouch/include $(TOPLEVEL)/lib-src/lv2/lv2 $(TOPLEVEL)/lib-src/lv2/lilv $(TOPLEVEL)/lib-src/lv2/suil $(TOPLEVEL)/lib-src/twolame/libtwolame $(TOPLEVEL)/mac/config/$(arch)/lib-src/sbsms/**";
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/include $(TOPLEVEL)/mac/config/$(arch)/src/** $(TOPLEVEL)/mac $(TOPLEVEL)/src/** $(TOPLEVEL)/lib-src/FileDialog $(TOPLEVEL)/lib-src/lib-widget-extra $(TOPLEVEL)/lib-src/libflac/include $(TOPLEVEL)/lib-src/libid3tag $(TOPLEVEL)/mac/config/$(arch)/lib-src/libmad $(TOPLEVEL)/lib-src/libmad $(TOPLEVEL)/lib-src/libmpg123 $(TOPLEVEL)/lib-src/libmp3lame $(TOPLEVEL)/lib-src/libnyquist $(TOPLEVEL)/lib-src/libogg/include $(TOPLEVEL)/lib-src/libscorealiagn $(TOPLEVEL)/mac/config/$(arch)/lib-src/libsndfile/** $(TOPLEVEL)/lib-src/libsndfile/src $(TOPLEVEL)/lib-src/libsoxr/src $(TOPLEVEL)/lib-src/libvamp $(TOPLEVEL)/lib-src/libvorbis/include $(TOPLEVEL)/lib-src/portaudio-v19/include $(TOPLEVEL)/lib-src/portmixer/include $(TOPLEVEL)/lib-src/portsmf $(TOPLEVEL)/mac/config/$(arch)/lib-src/soundtouch/** $(TOPLEVEL)/lib-src/soundtouch/include $(TOPLEVEL)/lib-src/portmidi/pm_common $(TOPLEVEL)/lib-src/portmidi/pm_mac $(TOPLEVEL)/lib-src/portmidi/porttime $(TOPLEVEL)/lib-src/lv2/lv2 $(TOPLEVEL)/lib-src/lv2/lilv $(TOPLEVEL)/lib-src/lv2/suil $(TOPLEVEL)/lib-src/twolame/libtwolame $(TOPLEVEL)/mac/config/$(arch)/lib-src/sbsms/** $(TOPLEVEL)/lib-src/sbsms/include $(TOPLEVEL)/lib-src/lame";
 			};
 			name = Debug;
 		};
@@ -9340,7 +9342,7 @@
 				);
 				PRODUCT_NAME = vorbis;
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/mac/config/$(arch)/lib-src/libvorbis/** $(TOPLEVEL)/lib-src/libvorbis/lib $(TOPLEVEL)/mac/config/$(arch)/lib-src/libogg/** $(TOPLEVEL)/lib-src/libogg/include";
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/mac/config/$(arch)/lib-src/libvorbis/** $(TOPLEVEL)/lib-src/libvorbis/include $(TOPLEVEL)/lib-src/libvorbis/lib $(TOPLEVEL)/mac/config/$(arch)/lib-src/libogg/** $(TOPLEVEL)/lib-src/libogg/include";
 			};
 			name = Debug;
 		};
@@ -9401,6 +9403,7 @@
 				);
 				PRODUCT_NAME = portaudio;
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/lib-src/portaudio-v19/include $(TOPLEVEL)/lib-src/portaudio-v19/src/common $(TOPLEVEL)/lib-src/portaudio-v19/os/unix";
 			};
 			name = Debug;
 		};
@@ -9411,6 +9414,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "PX_USE_MAC_COREAUDIO=1";
 				PRODUCT_NAME = portmixer;
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/lib-src/portmixer/include $(TOPLEVEL)/lib-src/portaudio-v19/include";
 			};
 			name = Debug;
 		};
@@ -9421,7 +9425,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = HAVE_CONFIG_H;
 				PRODUCT_NAME = soundtouch;
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/mac/config/$(arch)/lib-src/soundtouch/**";
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/lib-src/soundtouch/include $(TOPLEVEL)/mac/config/$(arch)/lib-src/soundtouch/**";
 			};
 			name = Debug;
 		};
@@ -9576,7 +9580,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.audacityteam.audacity;
 				PRODUCT_NAME = Audacity;
 				STRIP_INSTALLED_PRODUCT = NO;
-				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/include $(TOPLEVEL)/mac/config/$(arch)/src/** $(TOPLEVEL)/mac $(TOPLEVEL)/src/** $(TOPLEVEL)/lib-src/FileDialog $(TOPLEVEL)/lib-src/libflac/include $(TOPLEVEL)/lib-src/libid3tag $(TOPLEVEL)/lib-src/lame $(TOPLEVEL)/mac/config/$(arch)/lib-src/libmad $(TOPLEVEL)/lib-src/libmad $(TOPLEVEL)/lib-src/libogg/include $(TOPLEVEL)/lib-src/libnyquist/nyq $(TOPLEVEL)/mac/config/$(arch)/lib-src/libsndfile/** $(TOPLEVEL)/lib-src/libsndfile/src $(TOPLEVEL)/lib-src/libsoxr/src $(TOPLEVEL)/lib-src/libvamp $(TOPLEVEL)/lib-src/libvorbis/include $(TOPLEVEL)/lib-src/portaudio-v19/include $(TOPLEVEL)/lib-src/portmixer/px_common $(TOPLEVEL)/lib-src/portsmf $(TOPLEVEL)/mac/config/$(arch)/lib-src/soundtouch/** $(TOPLEVEL)/lib-src/soundtouch/include $(TOPLEVEL)/lib-src/lv2/lv2 $(TOPLEVEL)/lib-src/lv2/lilv $(TOPLEVEL)/lib-src/lv2/suil $(TOPLEVEL)/lib-src/twolame/libtwolame $(TOPLEVEL)/mac/config/$(arch)/lib-src/sbsms/**";
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/include $(TOPLEVEL)/mac/config/$(arch)/src/** $(TOPLEVEL)/mac $(TOPLEVEL)/src/** $(TOPLEVEL)/lib-src/FileDialog $(TOPLEVEL)/lib-src/lib-widget-extra $(TOPLEVEL)/lib-src/libflac/include $(TOPLEVEL)/lib-src/libid3tag $(TOPLEVEL)/mac/config/$(arch)/lib-src/libmad $(TOPLEVEL)/lib-src/libmad $(TOPLEVEL)/lib-src/libmpg123 $(TOPLEVEL)/lib-src/libmp3lame $(TOPLEVEL)/lib-src/libnyquist $(TOPLEVEL)/lib-src/libogg/include $(TOPLEVEL)/lib-src/libscorealiagn $(TOPLEVEL)/mac/config/$(arch)/lib-src/libsndfile/** $(TOPLEVEL)/lib-src/libsndfile/src $(TOPLEVEL)/lib-src/libsoxr/src $(TOPLEVEL)/lib-src/libvamp $(TOPLEVEL)/lib-src/libvorbis/include $(TOPLEVEL)/lib-src/portaudio-v19/include $(TOPLEVEL)/lib-src/portmixer/include $(TOPLEVEL)/lib-src/portsmf $(TOPLEVEL)/mac/config/$(arch)/lib-src/soundtouch/** $(TOPLEVEL)/lib-src/soundtouch/include $(TOPLEVEL)/lib-src/portmidi/pm_common $(TOPLEVEL)/lib-src/portmidi/pm_mac $(TOPLEVEL)/lib-src/portmidi/porttime $(TOPLEVEL)/lib-src/lv2/lv2 $(TOPLEVEL)/lib-src/lv2/lilv $(TOPLEVEL)/lib-src/lv2/suil $(TOPLEVEL)/lib-src/twolame/libtwolame $(TOPLEVEL)/mac/config/$(arch)/lib-src/sbsms/** $(TOPLEVEL)/lib-src/sbsms/include $(TOPLEVEL)/lib-src/lame";
 			};
 			name = Release;
 		};
@@ -9668,7 +9672,7 @@
 				);
 				PRODUCT_NAME = vorbis;
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/mac/config/$(arch)/lib-src/libvorbis/** $(TOPLEVEL)/lib-src/libvorbis/lib $(TOPLEVEL)/mac/config/$(arch)/lib-src/libogg/** $(TOPLEVEL)/lib-src/libogg/include";
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/mac/config/$(arch)/lib-src/libvorbis/** $(TOPLEVEL)/lib-src/libvorbis/include $(TOPLEVEL)/lib-src/libvorbis/lib $(TOPLEVEL)/mac/config/$(arch)/lib-src/libogg/** $(TOPLEVEL)/lib-src/libogg/include";
 			};
 			name = Release;
 		};
@@ -9729,6 +9733,7 @@
 				);
 				PRODUCT_NAME = portaudio;
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/lib-src/portaudio-v19/include $(TOPLEVEL)/lib-src/portaudio-v19/src/common $(TOPLEVEL)/lib-src/portaudio-v19/os/unix";
 			};
 			name = Release;
 		};
@@ -9739,6 +9744,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "PX_USE_MAC_COREAUDIO=1";
 				PRODUCT_NAME = portmixer;
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/lib-src/portmixer/include $(TOPLEVEL)/lib-src/portaudio-v19/include";
 			};
 			name = Release;
 		};
@@ -9749,7 +9755,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = HAVE_CONFIG_H;
 				PRODUCT_NAME = soundtouch;
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/mac/config/$(arch)/lib-src/soundtouch/**";
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/lib-src/soundtouch/include $(TOPLEVEL)/mac/config/$(arch)/lib-src/soundtouch/**";
 			};
 			name = Release;
 		};
@@ -9817,6 +9823,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				PRODUCT_NAME = scorealign;
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/lib-src/portsmf";
 			};
 			name = Debug;
 		};
@@ -9826,6 +9833,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				PRODUCT_NAME = scorealign;
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/lib-src/portsmf";
 			};
 			name = Release;
 		};
@@ -9959,7 +9967,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.audacityteam.audacity;
 				PRODUCT_NAME = Audacity;
 				STRIP_INSTALLED_PRODUCT = NO;
-				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/include $(TOPLEVEL)/mac/config/$(arch)/src/** $(TOPLEVEL)/mac $(TOPLEVEL)/src/** $(TOPLEVEL)/lib-src/FileDialog $(TOPLEVEL)/lib-src/libflac/include $(TOPLEVEL)/lib-src/libid3tag $(TOPLEVEL)/lib-src/lame $(TOPLEVEL)/mac/config/$(arch)/lib-src/libmad $(TOPLEVEL)/lib-src/libmad $(TOPLEVEL)/lib-src/libogg/include $(TOPLEVEL)/lib-src/libnyquist/nyq $(TOPLEVEL)/mac/config/$(arch)/lib-src/libsndfile/** $(TOPLEVEL)/lib-src/libsndfile/src $(TOPLEVEL)/lib-src/libsoxr/src $(TOPLEVEL)/lib-src/libvamp $(TOPLEVEL)/lib-src/libvorbis/include $(TOPLEVEL)/lib-src/portaudio-v19/include $(TOPLEVEL)/lib-src/portmixer/px_common $(TOPLEVEL)/lib-src/portsmf $(TOPLEVEL)/mac/config/$(arch)/lib-src/soundtouch/** $(TOPLEVEL)/lib-src/soundtouch/include $(TOPLEVEL)/lib-src/lv2/lv2 $(TOPLEVEL)/lib-src/lv2/lilv $(TOPLEVEL)/lib-src/lv2/suil $(TOPLEVEL)/lib-src/twolame/libtwolame $(TOPLEVEL)/mac/config/$(arch)/lib-src/sbsms/**";
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/include $(TOPLEVEL)/mac/config/$(arch)/src/** $(TOPLEVEL)/mac $(TOPLEVEL)/src/** $(TOPLEVEL)/lib-src/FileDialog $(TOPLEVEL)/lib-src/lib-widget-extra $(TOPLEVEL)/lib-src/libflac/include $(TOPLEVEL)/lib-src/libid3tag $(TOPLEVEL)/mac/config/$(arch)/lib-src/libmad $(TOPLEVEL)/lib-src/libmad $(TOPLEVEL)/lib-src/libmpg123 $(TOPLEVEL)/lib-src/libmp3lame $(TOPLEVEL)/lib-src/libnyquist $(TOPLEVEL)/lib-src/libogg/include $(TOPLEVEL)/lib-src/libscorealiagn $(TOPLEVEL)/mac/config/$(arch)/lib-src/libsndfile/** $(TOPLEVEL)/lib-src/libsndfile/src $(TOPLEVEL)/lib-src/libsoxr/src $(TOPLEVEL)/lib-src/libvamp $(TOPLEVEL)/lib-src/libvorbis/include $(TOPLEVEL)/lib-src/portaudio-v19/include $(TOPLEVEL)/lib-src/portmixer/include $(TOPLEVEL)/lib-src/portsmf $(TOPLEVEL)/mac/config/$(arch)/lib-src/soundtouch/** $(TOPLEVEL)/lib-src/soundtouch/include $(TOPLEVEL)/lib-src/portmidi/pm_common $(TOPLEVEL)/lib-src/portmidi/pm_mac $(TOPLEVEL)/lib-src/portmidi/porttime $(TOPLEVEL)/lib-src/lv2/lv2 $(TOPLEVEL)/lib-src/lv2/lilv $(TOPLEVEL)/lib-src/lv2/suil $(TOPLEVEL)/lib-src/twolame/libtwolame $(TOPLEVEL)/mac/config/$(arch)/lib-src/sbsms/** $(TOPLEVEL)/lib-src/sbsms/include $(TOPLEVEL)/lib-src/lame";
 			};
 			name = Debug64;
 		};
@@ -10062,7 +10070,7 @@
 				);
 				PRODUCT_NAME = vorbis;
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/mac/config/$(arch)/lib-src/libvorbis/** $(TOPLEVEL)/lib-src/libvorbis/lib $(TOPLEVEL)/mac/config/$(arch)/lib-src/libogg/** $(TOPLEVEL)/lib-src/libogg/include";
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/mac/config/$(arch)/lib-src/libvorbis/** $(TOPLEVEL)/lib-src/libvorbis/include $(TOPLEVEL)/lib-src/libvorbis/lib $(TOPLEVEL)/mac/config/$(arch)/lib-src/libogg/** $(TOPLEVEL)/lib-src/libogg/include";
 			};
 			name = Debug64;
 		};
@@ -10225,6 +10233,7 @@
 				);
 				PRODUCT_NAME = portaudio;
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/lib-src/portaudio-v19/include $(TOPLEVEL)/lib-src/portaudio-v19/src/common $(TOPLEVEL)/lib-src/portaudio-v19/os/unix";
 			};
 			name = Debug64;
 		};
@@ -10234,6 +10243,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				PRODUCT_NAME = portmidi;
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/lib-src/portmidi/pm_common $(TOPLEVEL)/lib-src/portmidi/pm_mac $(TOPLEVEL)/lib-src/portmidi/porttime";
 			};
 			name = Debug64;
 		};
@@ -10244,6 +10254,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "PX_USE_MAC_COREAUDIO=1";
 				PRODUCT_NAME = portmixer;
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/lib-src/portmixer/include $(TOPLEVEL)/lib-src/portaudio-v19/include";
 			};
 			name = Debug64;
 		};
@@ -10263,7 +10274,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = HAVE_CONFIG_H;
 				PRODUCT_NAME = soundtouch;
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/mac/config/$(arch)/lib-src/soundtouch/**";
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/lib-src/soundtouch/include $(TOPLEVEL)/mac/config/$(arch)/lib-src/soundtouch/**";
 			};
 			name = Debug64;
 		};
@@ -10285,6 +10296,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				PRODUCT_NAME = scorealign;
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/lib-src/portsmf";
 			};
 			name = Debug64;
 		};
@@ -10300,7 +10312,7 @@
 				PREBINDING = NO;
 				PRODUCT_NAME = sbsms;
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/mac/config/$(arch)/lib-src/sbsms/**";
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/lib-src/sbsms/include $(TOPLEVEL)/mac/config/$(arch)/lib-src/sbsms/**";
 			};
 			name = Debug64;
 		};
@@ -10412,7 +10424,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.audacityteam.audacity;
 				PRODUCT_NAME = Audacity;
 				STRIP_INSTALLED_PRODUCT = NO;
-				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/include $(TOPLEVEL)/mac/config/$(arch)/src/** $(TOPLEVEL)/mac $(TOPLEVEL)/src/** $(TOPLEVEL)/lib-src/FileDialog $(TOPLEVEL)/lib-src/libflac/include $(TOPLEVEL)/lib-src/libid3tag $(TOPLEVEL)/lib-src/lame $(TOPLEVEL)/mac/config/$(arch)/lib-src/libmad $(TOPLEVEL)/lib-src/libmad $(TOPLEVEL)/lib-src/libogg/include $(TOPLEVEL)/lib-src/libnyquist/nyq $(TOPLEVEL)/mac/config/$(arch)/lib-src/libsndfile/** $(TOPLEVEL)/lib-src/libsndfile/src $(TOPLEVEL)/lib-src/libsoxr/src $(TOPLEVEL)/lib-src/libvamp $(TOPLEVEL)/lib-src/libvorbis/include $(TOPLEVEL)/lib-src/portaudio-v19/include $(TOPLEVEL)/lib-src/portmixer/px_common $(TOPLEVEL)/lib-src/portsmf $(TOPLEVEL)/mac/config/$(arch)/lib-src/soundtouch/** $(TOPLEVEL)/lib-src/soundtouch/include $(TOPLEVEL)/lib-src/lv2/lv2 $(TOPLEVEL)/lib-src/lv2/lilv $(TOPLEVEL)/lib-src/lv2/suil $(TOPLEVEL)/lib-src/twolame/libtwolame $(TOPLEVEL)/mac/config/$(arch)/lib-src/sbsms/**";
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/include $(TOPLEVEL)/mac/config/$(arch)/src/** $(TOPLEVEL)/mac $(TOPLEVEL)/src/** $(TOPLEVEL)/lib-src/FileDialog $(TOPLEVEL)/lib-src/lib-widget-extra $(TOPLEVEL)/lib-src/libflac/include $(TOPLEVEL)/lib-src/libid3tag $(TOPLEVEL)/mac/config/$(arch)/lib-src/libmad $(TOPLEVEL)/lib-src/libmad $(TOPLEVEL)/lib-src/libmpg123 $(TOPLEVEL)/lib-src/libmp3lame $(TOPLEVEL)/lib-src/libnyquist $(TOPLEVEL)/lib-src/libogg/include $(TOPLEVEL)/lib-src/libscorealiagn $(TOPLEVEL)/mac/config/$(arch)/lib-src/libsndfile/** $(TOPLEVEL)/lib-src/libsndfile/src $(TOPLEVEL)/lib-src/libsoxr/src $(TOPLEVEL)/lib-src/libvamp $(TOPLEVEL)/lib-src/libvorbis/include $(TOPLEVEL)/lib-src/portaudio-v19/include $(TOPLEVEL)/lib-src/portmixer/include $(TOPLEVEL)/lib-src/portsmf $(TOPLEVEL)/mac/config/$(arch)/lib-src/soundtouch/** $(TOPLEVEL)/lib-src/soundtouch/include $(TOPLEVEL)/lib-src/portmidi/pm_common $(TOPLEVEL)/lib-src/portmidi/pm_mac $(TOPLEVEL)/lib-src/portmidi/porttime $(TOPLEVEL)/lib-src/lv2/lv2 $(TOPLEVEL)/lib-src/lv2/lilv $(TOPLEVEL)/lib-src/lv2/suil $(TOPLEVEL)/lib-src/twolame/libtwolame $(TOPLEVEL)/mac/config/$(arch)/lib-src/sbsms/** $(TOPLEVEL)/lib-src/sbsms/include $(TOPLEVEL)/lib-src/lame";
 			};
 			name = Release64;
 		};
@@ -10515,7 +10527,7 @@
 				);
 				PRODUCT_NAME = vorbis;
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/mac/config/$(arch)/lib-src/libvorbis/** $(TOPLEVEL)/lib-src/libvorbis/lib $(TOPLEVEL)/mac/config/$(arch)/lib-src/libogg/** $(TOPLEVEL)/lib-src/libogg/include";
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/mac/config/$(arch)/lib-src/libvorbis/** $(TOPLEVEL)/lib-src/libvorbis/include $(TOPLEVEL)/lib-src/libvorbis/lib $(TOPLEVEL)/mac/config/$(arch)/lib-src/libogg/** $(TOPLEVEL)/lib-src/libogg/include";
 			};
 			name = Release64;
 		};
@@ -10678,6 +10690,7 @@
 				);
 				PRODUCT_NAME = portaudio;
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/lib-src/portaudio-v19/include $(TOPLEVEL)/lib-src/portaudio-v19/src/common $(TOPLEVEL)/lib-src/portaudio-v19/os/unix";
 			};
 			name = Release64;
 		};
@@ -10687,6 +10700,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				PRODUCT_NAME = portmidi;
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/lib-src/portmidi/pm_common $(TOPLEVEL)/lib-src/portmidi/pm_mac $(TOPLEVEL)/lib-src/portmidi/porttime";
 			};
 			name = Release64;
 		};
@@ -10697,6 +10711,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "PX_USE_MAC_COREAUDIO=1";
 				PRODUCT_NAME = portmixer;
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/lib-src/portmixer/include $(TOPLEVEL)/lib-src/portaudio-v19/include";
 			};
 			name = Release64;
 		};
@@ -10716,7 +10731,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = HAVE_CONFIG_H;
 				PRODUCT_NAME = soundtouch;
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/mac/config/$(arch)/lib-src/soundtouch/**";
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/lib-src/soundtouch/include $(TOPLEVEL)/mac/config/$(arch)/lib-src/soundtouch/**";
 			};
 			name = Release64;
 		};
@@ -10738,6 +10753,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				PRODUCT_NAME = scorealign;
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/lib-src/portsmf";
 			};
 			name = Release64;
 		};
@@ -10753,7 +10769,7 @@
 				PREBINDING = NO;
 				PRODUCT_NAME = sbsms;
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/mac/config/$(arch)/lib-src/sbsms/**";
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/lib-src/sbsms/include $(TOPLEVEL)/mac/config/$(arch)/lib-src/sbsms/**";
 			};
 			name = Release64;
 		};
@@ -10768,7 +10784,7 @@
 				HEADER_SEARCH_PATHS = /Developer/Headers/FlatCarbon;
 				PRODUCT_NAME = mp3lame;
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/mac/lib-src/libmp3lame/**";
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/mac/lib-src/libmp3lame/** $(TOPLEVEL)/lib-src/libmp3lame $(TOPLEVEL)/lib-src/mpglib";
 			};
 			name = Debug;
 		};
@@ -10783,7 +10799,7 @@
 				HEADER_SEARCH_PATHS = /Developer/Headers/FlatCarbon;
 				PRODUCT_NAME = mp3lame;
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/mac/lib-src/libmp3lame/**";
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/mac/lib-src/libmp3lame/** $(TOPLEVEL)/lib-src/libmp3lame $(TOPLEVEL)/lib-src/mpglib";
 			};
 			name = Debug64;
 		};
@@ -10798,7 +10814,7 @@
 				HEADER_SEARCH_PATHS = /Developer/Headers/FlatCarbon;
 				PRODUCT_NAME = mp3lame;
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/mac/lib-src/libmp3lame/**";
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/mac/lib-src/libmp3lame/** $(TOPLEVEL)/lib-src/libmp3lame $(TOPLEVEL)/lib-src/mpglib";
 			};
 			name = Release;
 		};
@@ -10813,7 +10829,7 @@
 				HEADER_SEARCH_PATHS = /Developer/Headers/FlatCarbon;
 				PRODUCT_NAME = mp3lame;
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/mac/lib-src/libmp3lame/**";
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/mac/lib-src/libmp3lame/** $(TOPLEVEL)/lib-src/libmp3lame $(TOPLEVEL)/lib-src/mpglib";
 			};
 			name = Release64;
 		};
@@ -10828,7 +10844,7 @@
 				HEADER_SEARCH_PATHS = /Developer/Headers/FlatCarbon;
 				PRODUCT_NAME = mpg123;
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/mac/lib-src/mpglib/**";
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/mac/lib-src/mpglib/** $(TOPLEVEL)/lib-src/libmp3lame $(TOPLEVEL)/lib-src/mpglib";
 			};
 			name = Debug;
 		};
@@ -10843,7 +10859,7 @@
 				HEADER_SEARCH_PATHS = /Developer/Headers/FlatCarbon;
 				PRODUCT_NAME = mpg123;
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/mac/lib-src/mpglib/**";
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/mac/lib-src/mpglib/** $(TOPLEVEL)/lib-src/libmp3lame $(TOPLEVEL)/lib-src/mpglib";
 			};
 			name = Debug64;
 		};
@@ -10858,7 +10874,7 @@
 				HEADER_SEARCH_PATHS = /Developer/Headers/FlatCarbon;
 				PRODUCT_NAME = mpg123;
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/mac/lib-src/mpglib/**";
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/mac/lib-src/mpglib/** $(TOPLEVEL)/lib-src/libmp3lame $(TOPLEVEL)/lib-src/mpglib";
 			};
 			name = Release;
 		};
@@ -10873,7 +10889,7 @@
 				HEADER_SEARCH_PATHS = /Developer/Headers/FlatCarbon;
 				PRODUCT_NAME = mpg123;
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/mac/lib-src/mpglib/**";
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/mac/lib-src/mpglib/** $(TOPLEVEL)/lib-src/libmp3lame $(TOPLEVEL)/lib-src/mpglib";
 			};
 			name = Release64;
 		};
@@ -10917,7 +10933,7 @@
 				PREBINDING = NO;
 				PRODUCT_NAME = sbsms;
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/mac/config/$(arch)/lib-src/sbsms/**";
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/lib-src/sbsms/include $(TOPLEVEL)/mac/config/$(arch)/lib-src/sbsms/**";
 			};
 			name = Debug;
 		};
@@ -10933,7 +10949,7 @@
 				PREBINDING = NO;
 				PRODUCT_NAME = sbsms;
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/mac/config/$(arch)/lib-src/sbsms/**";
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/lib-src/sbsms/include $(TOPLEVEL)/mac/config/$(arch)/lib-src/sbsms/**";
 			};
 			name = Release;
 		};
