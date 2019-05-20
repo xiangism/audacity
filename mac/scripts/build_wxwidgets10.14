@@ -12,7 +12,7 @@ min=10.7
 
 # You shouldn't need to change this, but just in case you put Xcode in a non-standard
 # location, update this appropriately.
-sdk="/Applications/Xcode_10.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/"
+sdk="/Applications/Xcode_10.2.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/"
 
 if [ ! -d "${sdk}" ]
 then
