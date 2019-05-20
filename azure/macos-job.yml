@@ -8,7 +8,7 @@ jobs:
 - job: '${{ parameters.name }}'
 
   pool:
-    vmImage: 'macOS-10.13'
+    vmImage: 'macOS-10.14'
 
   variables:
     SDK: '${{ parameters.sdk }}'
@@ -23,7 +23,7 @@ jobs:
     displayName: 'git describe'
 
   - bash: |
-      sudo xcode-select -s /Applications/Xcode_10.1.app/Contents/Developer
+      sudo xcode-select -s /Applications/Xcode_10.2.1.app/Contents/Developer
       xcode-select -p
       xcodebuild -showsdks
       cd lib-src/wxWidgets
