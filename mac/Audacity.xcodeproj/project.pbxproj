@@ -9377,7 +9377,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = HAVE_CONFIG_H;
 				PRODUCT_NAME = soundtouch;
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/mac/config/$(arch)/lib-src/soundtouch/**";
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/lib-src/soundtouch/include $(TOPLEVEL)/mac/config/$(arch)/lib-src/soundtouch/**";
 			};
 			name = Debug;
 		};
@@ -9705,7 +9705,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = HAVE_CONFIG_H;
 				PRODUCT_NAME = soundtouch;
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/mac/config/$(arch)/lib-src/soundtouch/**";
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/lib-src/soundtouch/include $(TOPLEVEL)/mac/config/$(arch)/lib-src/soundtouch/**";
 			};
 			name = Release;
 		};
@@ -10219,7 +10219,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = HAVE_CONFIG_H;
 				PRODUCT_NAME = soundtouch;
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/mac/config/$(arch)/lib-src/soundtouch/**";
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/lib-src/soundtouch/include $(TOPLEVEL)/mac/config/$(arch)/lib-src/soundtouch/**";
 			};
 			name = Debug64;
 		};
@@ -10672,7 +10672,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = HAVE_CONFIG_H;
 				PRODUCT_NAME = soundtouch;
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/mac/config/$(arch)/lib-src/soundtouch/**";
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/lib-src/soundtouch/include $(TOPLEVEL)/mac/config/$(arch)/lib-src/soundtouch/**";
 			};
 			name = Release64;
 		};
