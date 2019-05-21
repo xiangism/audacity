@@ -9357,6 +9357,7 @@
 				);
 				PRODUCT_NAME = portaudio;
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/lib-src/portaudio-v19/include $(TOPLEVEL)/lib-src/portaudio-v19/src/common $(TOPLEVEL)/lib-src/portaudio-v19/os/unix";
 			};
 			name = Debug;
 		};
@@ -9685,6 +9686,7 @@
 				);
 				PRODUCT_NAME = portaudio;
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/lib-src/portaudio-v19/include $(TOPLEVEL)/lib-src/portaudio-v19/src/common $(TOPLEVEL)/lib-src/portaudio-v19/os/unix";
 			};
 			name = Release;
 		};
@@ -10181,6 +10183,7 @@
 				);
 				PRODUCT_NAME = portaudio;
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/lib-src/portaudio-v19/include $(TOPLEVEL)/lib-src/portaudio-v19/src/common $(TOPLEVEL)/lib-src/portaudio-v19/os/unix";
 			};
 			name = Debug64;
 		};
@@ -10634,6 +10637,7 @@
 				);
 				PRODUCT_NAME = portaudio;
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/lib-src/portaudio-v19/include $(TOPLEVEL)/lib-src/portaudio-v19/src/common $(TOPLEVEL)/lib-src/portaudio-v19/os/unix";
 			};
 			name = Release64;
 		};
