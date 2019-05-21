@@ -9298,7 +9298,7 @@
 				);
 				PRODUCT_NAME = vorbis;
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/mac/config/$(arch)/lib-src/libvorbis/** $(TOPLEVEL)/lib-src/libvorbis/lib $(TOPLEVEL)/mac/config/$(arch)/lib-src/libogg/** $(TOPLEVEL)/lib-src/libogg/include";
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/mac/config/$(arch)/lib-src/libvorbis/** $(TOPLEVEL)/lib-src/libvorbis/include $(TOPLEVEL)/lib-src/libvorbis/lib $(TOPLEVEL)/mac/config/$(arch)/lib-src/libogg/** $(TOPLEVEL)/lib-src/libogg/include";
 			};
 			name = Debug;
 		};
@@ -9628,7 +9628,7 @@
 				);
 				PRODUCT_NAME = vorbis;
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/mac/config/$(arch)/lib-src/libvorbis/** $(TOPLEVEL)/lib-src/libvorbis/lib $(TOPLEVEL)/mac/config/$(arch)/lib-src/libogg/** $(TOPLEVEL)/lib-src/libogg/include";
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/mac/config/$(arch)/lib-src/libvorbis/** $(TOPLEVEL)/lib-src/libvorbis/include $(TOPLEVEL)/lib-src/libvorbis/lib $(TOPLEVEL)/mac/config/$(arch)/lib-src/libogg/** $(TOPLEVEL)/lib-src/libogg/include";
 			};
 			name = Release;
 		};
@@ -10024,7 +10024,7 @@
 				);
 				PRODUCT_NAME = vorbis;
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/mac/config/$(arch)/lib-src/libvorbis/** $(TOPLEVEL)/lib-src/libvorbis/lib $(TOPLEVEL)/mac/config/$(arch)/lib-src/libogg/** $(TOPLEVEL)/lib-src/libogg/include";
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/mac/config/$(arch)/lib-src/libvorbis/** $(TOPLEVEL)/lib-src/libvorbis/include $(TOPLEVEL)/lib-src/libvorbis/lib $(TOPLEVEL)/mac/config/$(arch)/lib-src/libogg/** $(TOPLEVEL)/lib-src/libogg/include";
 			};
 			name = Debug64;
 		};
@@ -10480,7 +10480,7 @@
 				);
 				PRODUCT_NAME = vorbis;
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/mac/config/$(arch)/lib-src/libvorbis/** $(TOPLEVEL)/lib-src/libvorbis/lib $(TOPLEVEL)/mac/config/$(arch)/lib-src/libogg/** $(TOPLEVEL)/lib-src/libogg/include";
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/mac/config/$(arch)/lib-src/libvorbis/** $(TOPLEVEL)/lib-src/libvorbis/include $(TOPLEVEL)/lib-src/libvorbis/lib $(TOPLEVEL)/mac/config/$(arch)/lib-src/libogg/** $(TOPLEVEL)/lib-src/libogg/include";
 			};
 			name = Release64;
 		};
