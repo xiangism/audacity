@@ -9368,6 +9368,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "PX_USE_MAC_COREAUDIO=1";
 				PRODUCT_NAME = portmixer;
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/lib-src/portmixer/include $(TOPLEVEL)/lib-src/portaudio-v19/include";
 			};
 			name = Debug;
 		};
@@ -9697,6 +9698,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "PX_USE_MAC_COREAUDIO=1";
 				PRODUCT_NAME = portmixer;
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/lib-src/portmixer/include $(TOPLEVEL)/lib-src/portaudio-v19/include";
 			};
 			name = Release;
 		};
@@ -10203,6 +10205,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "PX_USE_MAC_COREAUDIO=1";
 				PRODUCT_NAME = portmixer;
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/lib-src/portmixer/include $(TOPLEVEL)/lib-src/portaudio-v19/include";
 			};
 			name = Debug64;
 		};
@@ -10657,6 +10660,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "PX_USE_MAC_COREAUDIO=1";
 				PRODUCT_NAME = portmixer;
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/lib-src/portmixer/include $(TOPLEVEL)/lib-src/portaudio-v19/include";
 			};
 			name = Release64;
 		};
