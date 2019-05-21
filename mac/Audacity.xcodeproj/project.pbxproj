@@ -9779,6 +9779,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				PRODUCT_NAME = scorealign;
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/lib-src/portsmf";
 			};
 			name = Debug;
 		};
@@ -9788,6 +9789,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				PRODUCT_NAME = scorealign;
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/lib-src/portsmf";
 			};
 			name = Release;
 		};
@@ -10250,6 +10252,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				PRODUCT_NAME = scorealign;
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/lib-src/portsmf";
 			};
 			name = Debug64;
 		};
@@ -10706,6 +10709,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				PRODUCT_NAME = scorealign;
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/lib-src/portsmf";
 			};
 			name = Release64;
 		};
