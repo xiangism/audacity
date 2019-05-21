@@ -9035,6 +9035,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				PRODUCT_NAME = portmidi;
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/lib-src/portmidi/pm_common $(TOPLEVEL)/lib-src/portmidi/pm_mac $(TOPLEVEL)/lib-src/portmidi/porttime";
 			};
 			name = Debug;
 		};
@@ -9044,6 +9045,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				PRODUCT_NAME = portmidi;
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/lib-src/portmidi/pm_common $(TOPLEVEL)/lib-src/portmidi/pm_mac $(TOPLEVEL)/lib-src/portmidi/porttime";
 			};
 			name = Release;
 		};
@@ -10195,6 +10197,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				PRODUCT_NAME = portmidi;
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/lib-src/portmidi/pm_common $(TOPLEVEL)/lib-src/portmidi/pm_mac $(TOPLEVEL)/lib-src/portmidi/porttime";
 			};
 			name = Debug64;
 		};
@@ -10650,6 +10653,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				PRODUCT_NAME = portmidi;
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/lib-src/portmidi/pm_common $(TOPLEVEL)/lib-src/portmidi/pm_mac $(TOPLEVEL)/lib-src/portmidi/porttime";
 			};
 			name = Release64;
 		};
