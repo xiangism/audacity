@@ -10740,7 +10740,7 @@
 				HEADER_SEARCH_PATHS = /Developer/Headers/FlatCarbon;
 				PRODUCT_NAME = mp3lame;
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/mac/lib-src/libmp3lame/**";
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/mac/lib-src/libmp3lame/** $(TOPLEVEL)/lib-src/libmp3lame $(TOPLEVEL)/lib-src/mpglib";
 			};
 			name = Debug;
 		};
@@ -10755,7 +10755,7 @@
 				HEADER_SEARCH_PATHS = /Developer/Headers/FlatCarbon;
 				PRODUCT_NAME = mp3lame;
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/mac/lib-src/libmp3lame/**";
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/mac/lib-src/libmp3lame/** $(TOPLEVEL)/lib-src/libmp3lame $(TOPLEVEL)/lib-src/mpglib";
 			};
 			name = Debug64;
 		};
@@ -10770,7 +10770,7 @@
 				HEADER_SEARCH_PATHS = /Developer/Headers/FlatCarbon;
 				PRODUCT_NAME = mp3lame;
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/mac/lib-src/libmp3lame/**";
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/mac/lib-src/libmp3lame/** $(TOPLEVEL)/lib-src/libmp3lame $(TOPLEVEL)/lib-src/mpglib";
 			};
 			name = Release;
 		};
@@ -10785,7 +10785,7 @@
 				HEADER_SEARCH_PATHS = /Developer/Headers/FlatCarbon;
 				PRODUCT_NAME = mp3lame;
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/mac/lib-src/libmp3lame/**";
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/mac/lib-src/libmp3lame/** $(TOPLEVEL)/lib-src/libmp3lame $(TOPLEVEL)/lib-src/mpglib";
 			};
 			name = Release64;
 		};
