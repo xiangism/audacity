@@ -10256,7 +10256,7 @@
 				PREBINDING = NO;
 				PRODUCT_NAME = sbsms;
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/mac/config/$(arch)/lib-src/sbsms/**";
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/lib-src/sbsms/include $(TOPLEVEL)/mac/config/$(arch)/lib-src/sbsms/**";
 			};
 			name = Debug64;
 		};
@@ -10709,7 +10709,7 @@
 				PREBINDING = NO;
 				PRODUCT_NAME = sbsms;
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/mac/config/$(arch)/lib-src/sbsms/**";
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/lib-src/sbsms/include $(TOPLEVEL)/mac/config/$(arch)/lib-src/sbsms/**";
 			};
 			name = Release64;
 		};
@@ -10873,7 +10873,7 @@
 				PREBINDING = NO;
 				PRODUCT_NAME = sbsms;
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/mac/config/$(arch)/lib-src/sbsms/**";
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/lib-src/sbsms/include $(TOPLEVEL)/mac/config/$(arch)/lib-src/sbsms/**";
 			};
 			name = Debug;
 		};
@@ -10889,7 +10889,7 @@
 				PREBINDING = NO;
 				PRODUCT_NAME = sbsms;
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/mac/config/$(arch)/lib-src/sbsms/**";
+				USER_HEADER_SEARCH_PATHS = "$(TOPLEVEL)/lib-src/sbsms/include $(TOPLEVEL)/mac/config/$(arch)/lib-src/sbsms/**";
 			};
 			name = Release;
 		};
