@@ -68,6 +68,7 @@ EOF
 echo '
    tell application "Finder"
      tell disk "'$TITLE'"
+       with timeout of 600 seconds
            open
            set current view of container window to icon view
            set toolbar visible of container window to false
@@ -83,13 +84,22 @@ echo '
            close
            open
            update without registering applications
-           delay 5
-           eject
+           delay 15
+       end timeout
      end tell
    end tell
 ' | osascript
 
 sleep 5
+
+# Detach everything
+ATTACHED=$(hdiutil info | awk "/\/Volumes\/${VOL}/{print \$1}")
+if [ -n "${ATTACHED}" ]
+then
+   hdiutil unmount -force "${ATTACHED}"
+   hdiutil detach "${ATTACHED}"
+fi
+
 
 # Compress and prepare for Internet delivery
 hdiutil convert TMP.dmg -format UDZO -imagekey zlib-level=9 -o "${DIST_OUTPUT_PATH}$DMG.dmg"
