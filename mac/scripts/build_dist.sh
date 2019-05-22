@@ -89,6 +89,8 @@ echo '
    end tell
 ' | osascript
 
+sleep 5
+
 # Compress and prepare for Internet delivery
 hdiutil convert TMP.dmg -format UDZO -imagekey zlib-level=9 -o "${DIST_OUTPUT_PATH}$DMG.dmg"
 
