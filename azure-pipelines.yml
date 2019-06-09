@@ -2,9 +2,14 @@ trigger:
 - build
 
 jobs:
-- template: 'azure/msvc-job.yml'
+- template: 'azure/msvc2017-job.yml'
   parameters:
-    name: 'Win32'
+    name: 'Win32_vs2017'
+    platform: 'Win32'
+
+- template: 'azure/msvc2019-job.yml'
+  parameters:
+    name: 'Win32_vs2019'
     platform: 'Win32'
 
 - template: 'azure/linux-job.yml'
