@@ -28,6 +28,10 @@ jobs:
       GIT_DESCRIBE=$(git describe --tags --dirty --always)
       echo "##vso[task.setvariable variable=BUILD_NAME]${GIT_DESCRIBE}"
       echo "##vso[task.setvariable variable=ZIP_FILE_NAME]$(Build.ArtifactStagingDirectory)/audacity-vs2019-$(target)-${GIT_DESCRIBE}.zip"
+      echo "#define REV_LONG $(git show -s --format=\"%H\")" > src/RevisionIdent.h
+      echo "#define REV_TIME $(git show -s --format=\"%ci\")" >> src/RevisionIdent.h
+      echo "#define REV_DESCRIBE ${GIT_DESCRIBE}" >> src/RevisionIdent.h
+      echo "#define REV_BRANCH \"$(git rev-parse --abbrev-ref HEAD)\"" >> src/RevisionIdent.h
     displayName: git describe
 
   - task: MSBuild@1
